@@ -1,0 +1,50 @@
+/* Base--------------------------------------------- */
+
+/* Typography */
+
+body {
+    background-color: rgb(231, 231, 231);
+    color: rgb(41, 50, 65);
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat Alternates", serif;
+    margin: 0.5em 0;
+}
+
+/* Elements */
+
+section {
+    padding: 0 1rem;
+}
+
+/* Links */
+
+a,
+a:visited {
+    color: rgb(61, 90, 128);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: rgb(238, 108, 77);
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 1px dotted;
+}
+
+/* Components---------------------------------------------*/
