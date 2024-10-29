@@ -169,8 +169,11 @@ ul {
 
 /* Main - Contact */
 
+.bg-blue {
+}
+
 .contact {
-    margin: 3rem auto 2rem;
+    margin: 3rem auto;
     padding: 2rem;
     border: solid;
     max-width: 25rem;
@@ -185,4 +188,21 @@ ul {
     border-radius: 0.5rem;
     display: block;
     padding: 0.5rem;
+}
+
+/* Footer */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(41, 50, 65);
+}
+
+.top-button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: rgb(238, 108, 77);
+    border: 1px solid rgb(238, 108, 77);
 }
