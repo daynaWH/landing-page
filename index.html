@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
     <body>
-        <header class="site-header">
+        <header class="site-header" id="header">
             <!-- Navbar - Logo (Home), About, Projects, Contact -->
             <a href="index.html"><span>&#9786;</span></a>
             <!--Placeholder for a Logo-->
@@ -27,9 +27,9 @@
                     <img src="images/hamburger.png" alt="" />
                 </button>
                 <ul class="nav-list">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#header">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,18 +45,21 @@
                 Online Stores (Shopify Store, WooCommerce Store)
             Contact
             -->
-            <section class="hero">
-                <h1>Hello World, this is Dayna</h1>
-                <p>
-                    Lorem ipsum dolor sit amet et delectus accommodare his
-                    consul copiosae legendos at vix ad putent delectus delicata
-                    usu. Vidit dissentiet eos cu eum an brute copiosae
-                    hendrerit. Eos erant dolorum an. Per facer affert ut.
-                </p>
-                <p>&#8595;</p>
+            <section class="hero-container">
+                <div class="hero-content">
+                    <h1>Hello World, this is Dayna</h1>
+                    <p class="intro">
+                        Lorem ipsum dolor sit amet et delectus accommodare his
+                        consul copiosae legendos at vix ad putent delectus
+                        delicata usu. Vidit dissentiet eos cu eum an brute
+                        copiosae hendrerit. Eos erant dolorum an. Per facer
+                        affert ut.
+                    </p>
+                </div>
+                <!-- <p class="down"><a href="#projects">&#8595;</a></p> -->
             </section>
 
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h2>Projects</h2>
                 <p>Lorem ipsum dolor sit amet et delectus accommodare his</p>
                 <button>All</button>
@@ -139,7 +142,7 @@
                 </article>
             </section>
 
-            <section class="contact">
+            <section class="contact" id="contact">
                 <h2>Contact Me</h2>
                 <article>
                     <p>
@@ -154,7 +157,7 @@
         <footer>
             <!-- Logo, Back to Top button, Link to github, Linkedin -->
             <a href=""><span>&#9786;</span></a>
-            <button>Back to Top</button>
+            <a href="#header">Back to Top</a>
             <nav>
                 <a href=""><i class="fa fa-github"></i></a>
                 <a href=""><i class="fa fa-linkedin-square"></i></a>
