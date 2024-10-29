@@ -129,3 +129,40 @@ ul {
     /* background-color: rgb(231, 231, 231, 0.8); */
     text-align: center;
 }
+
+/* Main - Projects */
+
+.projects {
+    text-align: center;
+}
+
+.projects button {
+    border: 1px solid rgb(238, 108, 77);
+    background-color: rgb(41, 50, 65);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.project-list article {
+    border: solid;
+    margin: 2rem 1rem;
+    padding-bottom: 1rem;
+}
+
+.project-list article img {
+    width: 20rem;
+}
+
+.project-list p {
+    font-size: 1.2rem;
+}
