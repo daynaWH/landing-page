@@ -18,148 +18,144 @@
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
     <body>
-        <header class="site-header" id="header">
-            <!-- Navbar - Logo (Home), About, Projects, Contact -->
-            <a href="index.html"><img src="images/logo.svg" alt="" class="logo"></a>
-            <!--Placeholder for a Logo-->
-            <nav class="site-navigation">
-                <button class="navicon">
-                    <img src="images/hamburger.png" alt="" />
-                </button>
-                <ul class="nav-list">
-                    <li><a href="#header">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="site-wrapper">
+            <header class="site-header" id="hero">
+                <!-- Navbar - Logo (Home), About, Projects, Contact -->
+                <a href="index.html"
+                    ><img src="images/logo.svg" alt="" class="logo"
+                /></a>
 
-        <main>
-            <!-- 
-            Name
-            Short paragraph/sentence about myself
-            Links to projects
-                HTML/CSS Projects (Country Website, Business Website, etc)
-                JS Projects (JavaScript Game, Movie Database)
-                WordPress Sites (Vancouver, Mindset, School)
-                Online Stores (Shopify Store, WooCommerce Store)
-            Contact
-            -->
-            <section class="hero-container">
-                <div class="hero-content">
-                    <h1>Hello World, this is Dayna</h1>
-                    <p class="intro">
-                        Lorem ipsum dolor sit amet et delectus accommodare his
-                        consul copiosae legendos at vix ad putent delectus
-                        delicata usu. Vidit dissentiet eos cu eum an brute
-                        copiosae hendrerit. Eos erant dolorum an. Per facer
-                        affert ut.
-                    </p>
+                <nav class="site-navigation">
+                    <button class="navicon">
+                        <img src="images/hamburger.png" alt="" />
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <div class="body-wrapper">
+                    <section class="hero" id="about">
+                        <h1>Hello World, this is Dayna speaking</h1>
+                        <p class="intro">
+                            Lorem ipsum dolor sit amet et delectus accommodare
+                            his consul copiosae legendos at vix ad putent
+                            delectus delicata usu. Vidit dissentiet eos cu eum
+                            an brute copiosae hendrerit. Eos erant dolorum an.
+                            Per facer affert ut.
+                        </p>
+                        <!-- <p class="down"><a href="#projects">&#8595;</a></p> -->
+                    </section>
+
+                    <section class="projects" id="projects">
+                        <h2>Projects</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet et delectus accommodare
+                            his
+                        </p>
+                        <button>All</button>
+                        <button>HTML / CSS</button>
+                        <button>JavaScript</button>
+                        <button>WordPress</button>
+                        <button>Online Stores</button>
+
+                        <section class="project-list">
+                            <article>
+                                <!-- <p>HTML</p><p>CSS</p> -->
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+
+                            <article>
+                                <img src="images/coming-soon.jpg" alt="" />
+                                <!--Img-->
+                                <p>Project Name</p>
+                                <a href="">View Details</a>
+                                <!--Link to the project-->
+                            </article>
+                        </section>
+                    </section>
+
+                    <section class="contact" id="contact">
+                        <h2>Contact Me</h2>
+                        <article>
+                            <p>
+                                Lorem ipsum dolor sit amet et delectus
+                                accommodare his consul copiosae legendos at vix
+                                ad putent
+                            </p>
+                            <a href="mailto:info@example.com">Send</a>
+                        </article>
+                    </section>
                 </div>
-                <!-- <p class="down"><a href="#projects">&#8595;</a></p> -->
-            </section>
-
-            <section class="projects" id="projects">
-                <h2>Projects</h2>
-                <p>Lorem ipsum dolor sit amet et delectus accommodare his</p>
-                <button>All</button>
-                <button>HTML / CSS</button>
-                <button>JavaScript</button>
-                <button>WordPress</button>
-                <button>Online Stores</button>
-
-                <section class="project-list">
-                    <article>
-                        <!-- <p>HTML</p><p>CSS</p> -->
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-
-                    <article>
-                        <img src="images/coming-soon.jpg" alt="" />
-                        <!--Img-->
-                        <p>Project Name</p>
-                        <a href="">View Details</a>
-                        <!--Link to the project-->
-                    </article>
-                </sectionv>
-            </section>
-
-            <section class="contact" id="contact">
-                <h2>Contact Me</h2>
-                <article>
-                    <p>
-                        Lorem ipsum dolor sit amet et delectus accommodare his
-                        consul copiosae legendos at vix ad putent
-                    </p>
-                    <a href="mailto:info@example.com">Send</a>
-                </article>
-            </section>
-        </main>
-
+            </main>
+        </div>
         <footer class="site-footer">
             <!-- Logo, Back to Top button, Link to github, Linkedin -->
-            <a href="index.html"><img src="images/logo.svg" alt="" class="logo"></a>
-            <a href="#header" class="top-button">Back to Top</a>
+            <a href="#about" class="top-button">Back to Top</a>
             <nav>
                 <a href=""><i class="fa fa-github fa-2x"></i></a>
                 <a href=""><i class="fa fa-linkedin-square fa-2x"></i></a>
