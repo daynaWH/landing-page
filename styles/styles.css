@@ -132,14 +132,21 @@ ul {
 /* Main - Hero */
 
 .hero {
-    /* background-image: url("../images/hero-banner2.jpg"); */
+    background-image: url("../images/hero.jpg");
     min-height: 60rem;
-    /* background-size: cover; */
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20rem;
+    padding: 10rem 15rem 0 60rem;
+}
+
+.btn-down {
+    font-size: 2rem;
+    padding: 0 1rem;
+    background-color: black;
+    border-radius: 50%;
 }
 
 /* Main - Projects */
