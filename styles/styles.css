@@ -158,13 +158,17 @@ ul {
 }
 
 .project-list article {
-    border: solid;
+    border: solid 7px;
+    border-radius: 9rem;
+    box-shadow: 20px 10px rgb(152, 193, 217);
     margin: 2rem 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
 }
 
 .project-list article img {
     width: 20rem;
+    border-radius: 9rem 9rem 0 0;
+    margin-bottom: 2rem;
 }
 
 .project-list p {
