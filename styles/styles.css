@@ -23,6 +23,10 @@ h6 {
     margin: 0.5em 0;
 }
 
+.logo {
+    width: 10rem;
+}
+
 /* Elements */
 
 section {
@@ -196,7 +200,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 5rem 2rem 2rem;
     background-color: rgb(41, 50, 65);
 }
 
@@ -205,4 +209,8 @@ ul {
     border-radius: 0.5rem;
     color: rgb(238, 108, 77);
     border: 1px solid rgb(238, 108, 77);
+}
+
+.site-footer i {
+    padding: 0.5rem;
 }
