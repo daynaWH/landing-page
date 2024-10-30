@@ -139,7 +139,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10rem 15rem 0 60rem;
 }
 
 .btn-down {
@@ -147,6 +146,14 @@ ul {
     padding: 0 1rem;
     background-color: black;
     border-radius: 50%;
+}
+
+/* Hero - Desktop View */
+
+@media (min-width: 43.75em) {
+    .hero {
+        padding: 10rem 15rem 0 60rem;
+    }
 }
 
 /* Main - Projects */
