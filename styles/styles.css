@@ -43,7 +43,8 @@ a:visited {
 
 a:hover,
 a:focus,
-a:active {
+a:active,
+button:hover {
     color: rgb(238, 108, 77);
     text-decoration: underline;
 }
@@ -203,10 +204,10 @@ ul {
     border: 1px solid rgb(238, 108, 77);
     background-color: rgb(41, 50, 65);
     color: rgb(255, 255, 255);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 0.5rem;
-    margin-right: 0.3rem;
+    margin: 0.2rem;
 }
 
 .project-list {
@@ -241,10 +242,11 @@ ul {
 
 .contact {
     text-align: center;
-    margin: 3rem auto;
+    margin: 10rem auto 5rem;
     padding: 2rem;
-    border: solid;
-    max-width: 25rem;
+    border: solid 8px;
+    box-shadow: -10px 10px rgb(238, 108, 77);
+    max-width: 60%;
 }
 
 .contact p {
@@ -256,25 +258,42 @@ ul {
     border-radius: 0.5rem;
     display: block;
     padding: 0.5rem;
+    width: 60%;
+    margin: 0 auto;
 }
 
 /* Footer */
 
 .site-footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 2rem 5rem 2rem 2rem;
+    padding: 2rem;
+    gap: 1rem;
     background-color: rgb(41, 50, 65);
 }
 
-.top-button {
+.site-footer * {
+    color: rgb(190 215 245);
+}
+
+a.top-button {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    color: rgb(238, 108, 77);
     border: 1px solid rgb(238, 108, 77);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .site-footer i {
-    padding: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+@media (min-width: 43.75em) {
+    .site-footer {
+        flex-direction: row;
+        margin-left: 15%;
+        padding: 2rem 5rem 2rem 2rem;
+        justify-content: space-between;
+    }
 }
