@@ -23,8 +23,8 @@ h6 {
     margin: 0.5em 0;
 }
 
-.logo {
-    width: 10rem;
+h2 {
+    font-size: 2rem;
 }
 
 /* Elements */
@@ -60,12 +60,17 @@ ul {
 
 /* Header */
 
+.logo {
+    width: 8rem;
+}
+
 .site-header {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
     background-color: rgb(41, 50, 65);
     align-items: center;
+    width: 100%;
 }
 
 .site-header li a {
@@ -83,20 +88,33 @@ ul {
 }
 
 /* Navigation Menu - Mobile View */
+/* Pulldown Menu */
 
 .navicon {
-    display: block;
+    /* display: block; */
     background-color: transparent;
-    width: 2.3rem;
+    width: 3rem;
     border: none;
-    cursor: pointer;
 }
 
 .nav-list {
     display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    top: 6rem;
+    left: 0;
+    text-align: center;
+    background-color: rgb(41, 50, 65);
 }
 
-/* TO DO: Open nav-list upon clicking the navicon */
+.navicon:focus + .nav-list {
+    display: block;
+}
+
+.nav-list li {
+    margin: 3.5rem 0;
+}
 
 /* Navigation Menu - Desktop View */
 
@@ -107,38 +125,51 @@ ul {
 
     .site-header {
         flex-direction: column;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 20%;
+        height: 100%;
+    }
+
+    .body-wrapper {
+        width: 80%;
     }
 
     .navicon {
         display: none;
     }
 
-    .site-navigation {
-        flex: 1 1 auto;
-    }
-
-    .site-navigation ul {
+    .nav-list {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
-        gap: 4rem;
-    }
-
-    .nav-list {
+        position: inherit;
         padding: 0;
     }
 }
 
 /* Main - Hero */
 
-.hero {
-    background-image: url("../images/hero.jpg");
-    min-height: 60rem;
-    background-size: cover;
+.hero-container {
+    /* background-image: url("../images/hero.jpg"); */
+    background-color: rgb(152, 193, 217);
+    /* min-height: 40rem;
+    /* /* background-size: cover; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; remove? */
+    /* justify-content: center; */
     align-items: center;
+    margin-bottom: 5rem;
+}
+
+.hero-container img {
+    height: 20rem;
+    margin-right: 10rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .btn-down {
@@ -151,8 +182,8 @@ ul {
 /* Hero - Desktop View */
 
 @media (min-width: 43.75em) {
-    .hero {
-        padding: 10rem 15rem 0 60rem;
+    .hero-container {
+        padding: 10rem 15rem 0 40rem;
     }
 }
 
@@ -183,7 +214,7 @@ ul {
     border: solid 7px;
     border-radius: 9rem;
     box-shadow: 20px 10px rgb(152, 193, 217);
-    margin: 2rem 1rem;
+    margin: 2rem 1.8rem;
     padding-bottom: 4rem;
 }
 
