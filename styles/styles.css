@@ -109,7 +109,8 @@ button:hover {
     background-color: rgb(41, 50, 65);
 }
 
-.navicon:focus + .nav-list {
+.navicon:focus + .nav-list,
+.nav-list:hover {
     display: block;
 }
 
